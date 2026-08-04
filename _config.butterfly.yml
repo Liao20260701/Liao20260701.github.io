@@ -15,13 +15,13 @@ nav:
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
-  fixed: false
+  fixed: true
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
 
 # --------------------------------------
 # Code Blocks Settings
@@ -46,7 +46,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  fab fa-github: https://github.com/Liao20260701 || GitHub || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
@@ -127,7 +127,7 @@ post_meta:
     label: true
   post:
     # Choose: left / center
-    position: left
+    position: center
     # Choose: created / updated / both
     date_type: both
     # Choose: date / relative
@@ -149,7 +149,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -165,6 +165,9 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 记录技术与生活的点滴
+    - 用代码构建世界，用文字丈量人生
+    - 保持热爱，奔赴山海
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -174,7 +177,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 1
 
 # Display the article introduction on homepage
 # 1: description
@@ -182,9 +185,9 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 300
 
 # --------------------------------------
 # Post Settings
@@ -194,9 +197,9 @@ toc:
   post: true
   page: false
   number: true
-  expand: false
+  expand: true
   # Only for post
-  style_simple: false
+  style_simple: true
   scroll_percent: true
 
 post_copyright:
@@ -259,7 +262,7 @@ footer:
   nav:
   owner:
     enable: true
-    since: 2025
+    since: 2026
   # Copyright of theme and framework
   copyright:
     enable: true
@@ -289,10 +292,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/Liao20260701
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 欢迎来到我的博客 ✨
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -386,7 +389,7 @@ darkmode:
   # Switch dark/light mode automatically
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
-  # autoChangeMode: false
+  # autoChangeMode: 1
   autoChangeMode: false
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
@@ -760,23 +763,23 @@ site_verification:
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
-# theme_color:
-#   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00c4b6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
-#   link_color: "#99a9bf"
-#   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
-#   code_foreground: "#F47466"
-#   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
-#   blockquote_padding_color: "#49b1f5"
-#   blockquote_background_color: "#49b1f5"
-#   scrollbar_color: "#49b1f5"
-#   meta_theme_color_light: "ffffff"
-#   meta_theme_color_dark: "#0d0d0d"
+theme_color:
+  enable: true
+  main: "#6f42c1"
+  paginator: "#6f42c1"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#6f42c1"
+  meta_color: "#858585"
+  hr_color: "#a370d8"
+  code_foreground: "#F47466"
+  code_background: "rgba(111, 66, 193, .06)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#6f42c1"
+  blockquote_background_color: "#49b1f5"
+  scrollbar_color: "#49b1f5"
+  meta_theme_color_light: "ffffff"
+  meta_theme_color_dark: "#1a1a2e"
 
 # The user interface setting of category and tag page
 # Choose: index - same as Homepage UI / default - same as archives UI
@@ -797,11 +800,11 @@ mask:
 
 # Loading Animation
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
@@ -813,13 +816,13 @@ display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
-  enable: false
+  enable: true
   # Specify the field to beautify (site or post)
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon:
+  title_prefix_icon: '\f867'
   # Specify the color of the title prefix icon, such as '#F47466'
-  title_prefix_icon_color:
+  title_prefix_icon_color: '#6f42c1'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work
@@ -872,20 +875,20 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
-  color: '0,0,255'
+  color: '111,66,193'
   # The opacity of line (0~1)
-  opacity: 0.7
+  opacity: 0.6
   # The z-index property of the background
   zIndex: -1
   # The number of lines
-  count: 99
+  count: 50
   mobile: false
 
 # Mouse click effects: fireworks
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999
   mobile: false
 
@@ -913,7 +916,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1002,7 +1005,7 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
@@ -1010,14 +1013,14 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: false
   # Use browser's native lazyload instead of vanilla-lazyload
-  native: false
+  native: true
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
@@ -1062,7 +1065,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
 
